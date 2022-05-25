@@ -18,3 +18,18 @@ exports.linearSearch = function(valueToFind, arrayToSearchThrough) {
     }
 };
 
+exports.linearSearchGlobal = function (valueToFind, arrayToSearchThrough) {
+    const counter = []
+    for (let i = 0; i <= arrayToSearchThrough.length; i++){
+        if (arrayToSearchThrough[i] === valueToFind){
+            counter.push(i)
+        }
+    }
+    
+    if (counter.length === 0) {
+        return undefined
+    } else {
+        return counter
+    }
+}
+
