@@ -1,4 +1,5 @@
-from linear_search import *
+from linear_search import linear_search
+from linear_search import global_linear_search
 
 print(linear_search(3, [1,2,3]) == 2)
 print(linear_search(4, [1,2,3]) == None)
